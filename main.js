@@ -1,3 +1,4 @@
+/*
 // Your task is to create a function that does four basic mathematical operations.
 
 // The function should take three arguments - operation(string/char), value1(number), value2(number).
@@ -14,3 +15,22 @@ function basicOp(operation, value1, value2) {
 }
 
 console.log(basicOp('+', 4, 7))
+*/
+
+// Drone Fly-By
+
+function flyBy(lamps, drone){
+    let lampsArr = lamps.split(``)
+    let lampsOn = lampsArr.map((x, i) => {
+        // console.log(i)
+        // console.log(drone.length)
+        if (i < drone.length) {
+            return x = 'o'
+        } else {
+            return x
+        }
+    })
+    return lampsOn.join(``)
+}
+
+console.log(flyBy('xxxxxx', '====T'))
