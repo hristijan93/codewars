@@ -16,7 +16,7 @@ function basicOp(operation, value1, value2) {
 
 console.log(basicOp('+', 4, 7))
 */
-
+/*
 // Drone Fly-By
 
 function flyBy(lamps, drone){
@@ -34,3 +34,30 @@ function flyBy(lamps, drone){
 }
 
 console.log(flyBy('xxxxxx', '====T'))
+*/
+
+
+// +1 Array 
+
+
+function upArray(arr){
+  if (arr.length <= 0 || arr.some(el => el < 0 || el > 9)) {
+    return null;
+  }
+
+  let i = arr.length -1;
+
+  while (i >=0 && arr[i] == 9) {
+    arr[i--] = 0
+  }
+
+  if (i < 0) {
+    arr.unshift(1)
+  } else {
+    arr[i]++
+  }
+  return arr
+}
+
+
+console.log(upArray([4,3,2,5]))
