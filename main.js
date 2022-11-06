@@ -68,6 +68,13 @@ console.log(upArray([4,3,2,5]))
 
 // 8
 
+function invert(array) {
+  let result = array.map(el => el < 0 ? Math.abs(el) : -Math.abs(el))
+  return result
+}
+
+console.log(invert([-1,2,3,4,5]))
+
 
 // 7
 
@@ -76,3 +83,5 @@ console.log(upArray([4,3,2,5]))
 // 7
 
 // 8
+
+
