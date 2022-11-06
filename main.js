@@ -39,7 +39,7 @@ console.log(flyBy('xxxxxx', '====T'))
 
 // +1 Array 
 
-
+/*
 function upArray(arr){
   if (arr.length <= 0 || arr.some(el => el < 0 || el > 9)) {
     return null;
@@ -61,3 +61,18 @@ function upArray(arr){
 
 
 console.log(upArray([4,3,2,5]))
+*/
+
+
+// Array ladder
+
+// 8
+
+
+// 7
+
+// 6
+
+// 7
+
+// 8
