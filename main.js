@@ -79,30 +79,14 @@ console.log(upArray([4,3,2,5]))
 // 7
 
 function isSquare(arr) {
-  let solution = true;
-
-  if (arr.length === 0) {
-    solution = undefined
+  if (arr.length == 0) {
+    return undefined;
   }
-
-  let isInt = function(n) {
-    return n % 1 === 0
-  }
-  
-  arr.forEach(el => {
-    if (!isInt(Math.sqrt(el))) {
-      solution = false
-    }
-  })
-  
-  
-  return solution
+  let result = arr.every(el => Math.sqrt(el) % 1 ==0)
+  return result
 }
 
 console.log(isSquare([1, 4, 9, 16]))
-// console.log(isSquare([3, 4, 7, 9]))
-// console.log(isSquare([]))
-
 
 // 6
 
