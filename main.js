@@ -91,19 +91,31 @@ console.log(upArray([4,3,2,5]))
 
 // TODO: Push code to github
 // 6
-function createPhoneNumber(numbers){
-  let format = `(xxx) xxx-xxxx`;
+// function createPhoneNumber(numbers){
+//   let format = `(xxx) xxx-xxxx`;
 
-  for (let i = 0; i < numbers.length; i++) {
-    format = format.replace(`x`, numbers[i])
-  }
+//   for (let i = 0; i < numbers.length; i++) {
+//     format = format.replace(`x`, numbers[i])
+//   }
 
-  return format
-}
+//   return format
+// }
 
-console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
 // 7
+
+function number(arr) {
+  let result = arr.map((el, i) => {
+    return `${i + 1}: ${el}`
+  })
+
+  return result
+}
+
+console.log(number(['a', 'b', 'c']))
+console.log(number([]))
+
 
 // 8
 
