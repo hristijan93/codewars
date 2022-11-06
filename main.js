@@ -105,18 +105,23 @@ console.log(upArray([4,3,2,5]))
 
 // 7
 
-function number(arr) {
-  let result = arr.map((el, i) => {
-    return `${i + 1}: ${el}`
-  })
+// function number(arr) {
+//   let result = arr.map((el, i) => {
+//     return `${i + 1}: ${el}`
+//   })
 
-  return result
-}
+//   return result
+// }
 
-console.log(number(['a', 'b', 'c']))
-console.log(number([]))
+// console.log(number(['a', 'b', 'c']))
+// console.log(number([]))
 
 
 // 8
 
+function getAverage(marks){
+  return Math.trunc(marks.reduce((acc, current) => acc + current, 0) / marks.length)
+}
+
+console.log(getAverage([1,5,87,45,8,8]))
 
