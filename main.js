@@ -78,17 +78,30 @@ console.log(upArray([4,3,2,5]))
 
 // 7
 
-function isSquare(arr) {
-  if (arr.length == 0) {
-    return undefined;
+// function isSquare(arr) {
+//   if (arr.length == 0) {
+//     return undefined;
+//   }
+//   let result = arr.every(el => Math.sqrt(el) % 1 ==0)
+//   return result
+// }
+
+// console.log(isSquare([1, 4, 9, 16]))
+
+
+// TODO: Push code to github
+// 6
+function createPhoneNumber(numbers){
+  let format = `(xxx) xxx-xxxx`;
+
+  for (let i = 0; i < numbers.length; i++) {
+    format = format.replace(`x`, numbers[i])
   }
-  let result = arr.every(el => Math.sqrt(el) % 1 ==0)
-  return result
+
+  return format
 }
 
-console.log(isSquare([1, 4, 9, 16]))
-
-// 6
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
 // 7
 
