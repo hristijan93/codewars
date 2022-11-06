@@ -68,15 +68,41 @@ console.log(upArray([4,3,2,5]))
 
 // 8
 
-function invert(array) {
-  let result = array.map(el => el < 0 ? Math.abs(el) : -Math.abs(el))
-  return result
-}
+// function invert(array) {
+//   let result = array.map(el => el < 0 ? Math.abs(el) : -Math.abs(el))
+//   return result
+// }
 
-console.log(invert([-1,2,3,4,5]))
+// console.log(invert([-1,2,3,4,5]))
 
 
 // 7
+
+function isSquare(arr) {
+  let solution = true;
+
+  if (arr.length === 0) {
+    solution = undefined
+  }
+
+  let isInt = function(n) {
+    return n % 1 === 0
+  }
+  
+  arr.forEach(el => {
+    if (!isInt(Math.sqrt(el))) {
+      solution = false
+    }
+  })
+  
+  
+  return solution
+}
+
+console.log(isSquare([1, 4, 9, 16]))
+// console.log(isSquare([3, 4, 7, 9]))
+// console.log(isSquare([]))
+
 
 // 6
 
