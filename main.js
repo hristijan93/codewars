@@ -133,15 +133,43 @@ console.log(upArray([4,3,2,5]))
 // Create a function which answers the question "Are you playing banjo?".
 // If your name starts with the letter "R" or lower case "r", you are playing banjo!
 
-function areYouPlayingBanjo(name) {
-  return name[0] == `r` || name[0] == `R` ? name + " plays banjo" : name + " does not play banjo"
-}
+// function areYouPlayingBanjo(name) {
+//   return name[0] == `r` || name[0] == `R` ? name + " plays banjo" : name + " does not play banjo"
+// }
 
-console.log(areYouPlayingBanjo(`Hristijan`))
+// console.log(areYouPlayingBanjo(`Hristijan`))
 
 // 7
+// When provided with a String, capitalize all vowels
+
+// For example:
+
+// Input : "Hello World!"
+
+// Output : "HEllO WOrld!"
+
+// Note: Y is not a vowel in this kata.
+
+// function swap(string) {
+//   let vowels = ['a', 'e', 'i', 'o', 'u']
+//   let strArr = string.split(``)
+
+//   let result = strArr.map(el => {
+//       if(vowels.includes(el)) {
+//           return el.toUpperCase()
+//       } else {
+//           return el
+//       }
+//   })
+
+//   return result.join(``)
+// }
+
+// console.log(swap(`Hello World!`))
 
 // 6
+
+
 
 // 7
 
