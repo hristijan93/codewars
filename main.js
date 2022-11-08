@@ -169,7 +169,21 @@ console.log(upArray([4,3,2,5]))
 
 // 6
 
+// You will be given a number and you will need to return it as a string in Expanded Form. For example:
 
+// expandedForm(12); // Should return '10 + 2'
+
+function expandedForm(num) {
+  let numArr = String(num)
+                  .split(``)
+                  .map((num, index, arr) => num + "0".repeat(arr.length - index - 1))
+                  .filter((num) => Number(num) != 0)
+                  .join(` + `)
+
+  return numArr
+}
+
+console.log(expandedForm(1024))
 
 // 7
 
