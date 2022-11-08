@@ -173,18 +173,28 @@ console.log(upArray([4,3,2,5]))
 
 // expandedForm(12); // Should return '10 + 2'
 
-function expandedForm(num) {
-  let numArr = String(num)
-                  .split(``)
-                  .map((num, index, arr) => num + "0".repeat(arr.length - index - 1))
-                  .filter((num) => Number(num) != 0)
-                  .join(` + `)
+// function expandedForm(num) {
+//   let numArr = String(num)
+//                   .split(``)
+//                   .map((num, index, arr) => num + "0".repeat(arr.length - index - 1))
+//                   .filter((num) => Number(num) != 0)
+//                   .join(` + `)
 
-  return numArr
-}
+//   return numArr
+// }
 
-console.log(expandedForm(1024))
+// console.log(expandedForm(1024))
 
 // 7
+// Write a program to determine if a string contains only unique characters. Return true if it does and false otherwise.
+
+// The string may contain any of the 128 ASCII characters. Characters are case-sensitive, e.g. 'a' and 'A' are considered different characters.
+
+function hasUniqueChars(str){
+  let unique = new Set(str)
+  return unique.size === str.length
+}
+
+console.log(hasUniqueChars(`Hello world`))
 
 // 8
