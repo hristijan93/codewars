@@ -119,9 +119,22 @@ console.log(upArray([4,3,2,5]))
 
 // 8
 
-function getAverage(marks){
-  return Math.trunc(marks.reduce((acc, current) => acc + current, 0) / marks.length)
-}
+// function getAverage(marks){
+//   return Math.trunc(marks.reduce((acc, current) => acc + current, 0) / marks.length)
+// }
 
-console.log(getAverage([1,5,87,45,8,8]))
+// console.log(getAverage([1,5,87,45,8,8]))
 
+
+
+// String ladder
+
+// 8
+
+// 7
+
+// 6
+
+// 7
+
+// 8
