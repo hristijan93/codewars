@@ -190,11 +190,20 @@ console.log(upArray([4,3,2,5]))
 
 // The string may contain any of the 128 ASCII characters. Characters are case-sensitive, e.g. 'a' and 'A' are considered different characters.
 
-function hasUniqueChars(str){
-  let unique = new Set(str)
-  return unique.size === str.length
-}
+// function hasUniqueChars(str){
+//   let unique = new Set(str)
+//   return unique.size === str.length
+// }
 
-console.log(hasUniqueChars(`Hello world`))
+// console.log(hasUniqueChars(`Hello world`))
 
 // 8
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "");
+}
+
+console.log(removeExclamationMarks(`Hello W!!orld!`))
+
