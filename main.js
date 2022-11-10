@@ -241,7 +241,7 @@ function fizzbuzz(n){
 console.log(fizzbuzz(15))
 */
 
-
+/*
 // Disemvowel Trolls
 // Trolls are attacking your comment section!
 
@@ -256,3 +256,30 @@ function disemvowel(str) {
 }
 
 console.log(disemvowel("This website is for losers LOL!"))
+
+*/
+
+
+
+// Vowel Count
+
+// Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let result = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < str.length; i++) {
+      if(vowels.some(el => el == str[i].toLowerCase())) {
+          result++
+      }
+  }
+
+  return result;
+}
+
+console.log(getCount(`HrIstijAn`))
