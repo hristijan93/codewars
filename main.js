@@ -333,7 +333,7 @@ input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 
 console.log(openOrSenior(input))
 */
-
+/*
 // Strange Principal
 
 // A high school has a strange principal. On the first day, he has his students perform an odd opening day ceremony:
@@ -363,3 +363,28 @@ function numOfOpenLockers(n){
 
 
 console.log(numOfOpenLockers(1000))
+*/
+
+
+// ASC Week 1 Challenge 4 (Medium #1)
+
+// Write a function that converts any sentence into a V A P O R W A V E sentence. a V A P O R W A V E sentence converts all the letters into uppercase, and adds 2 spaces between each letter (or special character) to create this V A P O R W A V E effect.
+
+// Note that spaces should be ignored in this case.
+
+function vaporcode(string) {
+  let toArr = string.split(``)
+  let result = [];
+
+  for (let i = 0; i < toArr.length; i++) {
+      if(i == toArr.length || toArr[i] == ` `) {
+      } else {
+          result.push(toArr[i])
+          result.push(`  `)
+      }
+  }
+  result.splice(-1)
+  return result.join(``).toUpperCase()
+}
+
+console.log(vaporcode(`Hello my name is Hristijan`))
