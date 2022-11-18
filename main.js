@@ -364,8 +364,7 @@ function numOfOpenLockers(n){
 
 console.log(numOfOpenLockers(1000))
 */
-
-
+/*
 // ASC Week 1 Challenge 4 (Medium #1)
 
 // Write a function that converts any sentence into a V A P O R W A V E sentence. a V A P O R W A V E sentence converts all the letters into uppercase, and adds 2 spaces between each letter (or special character) to create this V A P O R W A V E effect.
@@ -388,3 +387,10 @@ function vaporcode(string) {
 }
 
 console.log(vaporcode(`Hello my name is Hristijan`))
+*/
+
+// Incrementer
+
+// Given an input of an array of digits, return the array with each digit incremented by its position in the array: the first digit will be incremented by 1, the second digit by 2, etc. Make sure to start counting your positions from 1 ( and not 0 ).
+
+// Your result can only contain single digit numbers, so if adding a digit with its position gives you a multiple-digit number, only the last digit of the number should be returned.
