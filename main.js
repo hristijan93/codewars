@@ -388,7 +388,7 @@ function vaporcode(string) {
 
 console.log(vaporcode(`Hello my name is Hristijan`))
 */
-
+/*
 // Incrementer
 
 // Given an input of an array of digits, return the array with each digit incremented by its position in the array: the first digit will be incremented by 1, the second digit by 2, etc. Make sure to start counting your positions from 1 ( and not 0 ).
@@ -406,3 +406,24 @@ function incrementer(nums) {
 }
 
 console.log(incrementer([1, 2, 3, 4, 5, 6, 7]))
+*/
+
+// Largest Elements
+
+// Write a program that outputs the top n elements from a list.
+
+function largest(n,xs){
+  let result = [];
+  let sortedArr = xs.sort((a, b) => b - a)
+  let i = 0;
+
+  while (i < n) {
+    result.push(xs[i])
+    i++
+  }
+
+  console.log(sortedArr)
+  return result.sort((a, b) => a - b)
+}
+
+console.log(largest(3, [10,9,8,7,6,9,5,4,3,2,1]))
