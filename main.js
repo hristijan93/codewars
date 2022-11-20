@@ -407,7 +407,7 @@ function incrementer(nums) {
 
 console.log(incrementer([1, 2, 3, 4, 5, 6, 7]))
 */
-
+/*
 // Largest Elements
 
 // Write a program that outputs the top n elements from a list.
@@ -427,3 +427,23 @@ function largest(n,xs){
 }
 
 console.log(largest(3, [10,9,8,7,6,9,5,4,3,2,1]))
+*/
+
+// Anagram Detection
+
+// An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+
+// Note: anagrams are case insensitive
+
+// Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+
+
+function isAnagram(test, original) {
+  let testLetters = Array.from(test).sort((a, b) => a.localeCompare(b)).join(``).toLowerCase()
+  let originalLetters = Array.from(original).sort((a, b) => a.localeCompare(b)).join(``).toLowerCase()
+
+  return testLetters == originalLetters
+}
+
+console.log(isAnagram('Buckethead', 'DeathCubeK'))
+
