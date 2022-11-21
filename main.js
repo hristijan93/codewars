@@ -428,7 +428,7 @@ function largest(n,xs){
 
 console.log(largest(3, [10,9,8,7,6,9,5,4,3,2,1]))
 */
-
+/*
 // Anagram Detection
 
 // An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
@@ -446,4 +446,16 @@ function isAnagram(test, original) {
 }
 
 console.log(isAnagram('Buckethead', 'DeathCubeK'))
+*/
 
+
+// Sum of odd numbers
+
+// Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n, 3)
+}
+
+console.log(rowSumOddNumbers(42))
