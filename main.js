@@ -448,7 +448,7 @@ function isAnagram(test, original) {
 console.log(isAnagram('Buckethead', 'DeathCubeK'))
 */
 
-
+/*
 // Sum of odd numbers
 
 // Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
@@ -459,3 +459,14 @@ function rowSumOddNumbers(n) {
 }
 
 console.log(rowSumOddNumbers(42))
+*/
+
+// In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+// Example: filter_list([1,2,'a','b']) == [1,2]
+
+function filter_list(l) {
+  return l.filter(el => typeof el == 'number')
+}
+
+console.log(filter_list([1,2,'a','b']))
