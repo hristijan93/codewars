@@ -460,7 +460,7 @@ function rowSumOddNumbers(n) {
 
 console.log(rowSumOddNumbers(42))
 */
-
+/*
 // In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
 // Example: filter_list([1,2,'a','b']) == [1,2]
@@ -470,3 +470,19 @@ function filter_list(l) {
 }
 
 console.log(filter_list([1,2,'a','b']))
+*/
+
+// Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
+
+// Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+
+String.prototype.toJadenCase = function () {
+  return this.split(` `).map(el => {
+    return el[0].toUpperCase() + el.slice(1)
+  }).join(` `)
+};
+
+let str = `How can mirrors be real if our eyes aren't real`
+
+console.log(str.toJadenCase())
