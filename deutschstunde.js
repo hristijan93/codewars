@@ -9,7 +9,23 @@
 
 
 function derDieDas(wort){
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'ä', 'ö', 'ü']
+    let vowelsCount = 0;
+    let w = wort.toLowerCase().split(``)
 
+    w.forEach(el => {
+        if (vowels.includes(el)) {
+            vowelsCount++
+        }
+    })
+    
+    if (vowelsCount < 2) {
+        return `das ${wort}`
+    } else if (vowelsCount <= 3) {
+        return `die ${wort}`
+    } else {
+        return `der ${wort}`
+    }
 }
 
 console.log(derDieDas("OOOpa"))
