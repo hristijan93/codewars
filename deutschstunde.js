@@ -1,3 +1,4 @@
+/*
 // Everybody knows a little german, right? But remembering the correct articles is a tough job. Write yourself a little helper, that returns the noun with the matching article:
 
 // each noun containing less than 2 vowels has the article "das"
@@ -29,3 +30,4 @@ function derDieDas(wort){
 }
 
 console.log(derDieDas("OOOpa"))
+*/
