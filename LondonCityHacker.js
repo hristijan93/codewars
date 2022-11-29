@@ -1,3 +1,4 @@
+/*
 // You are given a sequence of a journey in London, UK. The sequence will contain bus numbers and TFL tube names as strings e.g.
 
 // ['Northern', 'Central', 243, 1, 'Victoria']
@@ -25,3 +26,4 @@ function londonCityHacker(journey) {
 }
 
 console.log(londonCityHacker([12, 'Central', 'Circle', 21])) // 7.80
+*/
