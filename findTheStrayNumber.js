@@ -29,7 +29,7 @@ function stray(numbers) {
 console.log(stray([1, 1, 2]));
 console.log(stray([17, 17, 3, 17, 17, 17, 17]))
 */
-
+/*
 // Refactor
 
 function stray(numbers) {
@@ -44,3 +44,4 @@ function stray(numbers) {
 
 console.log(stray([1, 1, -19, 1, 1]));
 console.log(stray([-5, -5, -5, 505, -5, -5]));
+*/
